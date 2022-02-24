@@ -20,4 +20,6 @@ RSpec.describe FoodsClient do
       end
     end
   end
+  describe 'unit test ' do
+  end
 end
