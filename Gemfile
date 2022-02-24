@@ -25,6 +25,7 @@ end
 group :test do
   gem 'capybara'
   gem 'launchy'
+  gem 'rspec_junit_formatter'
   gem 'rspec-rails'
   gem 'simplecov'
   gem 'vcr'
