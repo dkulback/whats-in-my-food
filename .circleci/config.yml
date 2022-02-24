@@ -19,8 +19,8 @@ jobs:
       - run:
           name: Configure Bundler
           command: |
-            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
-            source $BASH_ENV
+            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $ZSH_ENV
+            source $ZSH_ENV
             gem install bundler
   migrate:
     executor: my-custom-executor
