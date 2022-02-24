@@ -97,9 +97,6 @@ workflows:
     jobs:             # The list of jobs we run as part of this workflow.
       - build         # Run build first.
       - test:
-        -run:
-          name: rspec tests
-          command: bundle exec rspec         # Then run test,
           requires:   # Test requires that build passes for it to run.
             - build   # Finally, run the build job.
       - deploy:
